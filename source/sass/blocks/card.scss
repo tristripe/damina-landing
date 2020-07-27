@@ -1,0 +1,357 @@
+.card {
+  position: relative;
+  width: 232px;
+  padding-right: 30px;
+  padding-bottom: 30px;
+  margin-bottom: 31px;
+
+  @media (max-width: $phone-420) {
+    padding-bottom: 15px;
+  }
+
+  &:nth-child(5n) {
+    width: 202px;
+    padding-right: 0;
+
+    .card__controls {
+      right: 0;
+    }
+  }
+
+  &::after {
+    position: absolute;
+    width: 100%;
+    display: block;
+    content: "";
+    bottom: 0;
+    background-color: $border-gray;
+    height: 2px;
+    left: 0;
+  }
+
+  @media (max-width: $desktop-1220) {
+    &:nth-child(5n) {
+      width: 232px;
+      padding-right: 30px;
+    }
+  }
+
+  @media (max-width: $tablet-768) {
+    width: 210px;
+    padding-right: 10px;
+
+    &:nth-child(5n) {
+      width: 210px;
+      padding-right: 10px;
+    }
+  }
+
+  @media (max-width: $phone) {
+    width: calc(50%);
+
+    &:nth-child(5n) {
+      width: calc(50%);
+    }
+
+    &:nth-child(2n) {
+      padding-right: 0;
+    }
+  }
+}
+
+.card.card--extended {
+  &::after {
+    display: none;
+
+    @media (max-width: $phone) {
+      display: block;
+    }
+  }
+}
+
+.card--extended {
+  padding: 22px 12px 3px 15px;
+  width: 560px;
+  border: 1px solid $border-gray;
+  display: flex;
+  margin-right: 10px;
+
+  &:nth-child(5n) {
+    width: 50%;
+  }
+
+  .card__image-wrapper {
+    display: flex;
+    min-height: 195px;
+    margin-top: -1px;
+    margin-right: 15px;
+    width: 490px;
+
+    @media (max-width: $desktop-1120) {
+      width: auto;
+    }
+
+    @media (max-width: $phone-420) {
+      min-height: 175px;
+    }
+  }
+
+  .card__data {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .card__description {
+    min-height: 72px;
+    margin-bottom: 77px;
+
+    a {
+      font-size: 16px;
+      line-height: 21px;
+      transition: 0.2s;
+
+      &:hover {
+        color: $orange;
+      }
+
+      @media (max-width: $phone-420) {
+        font-size: 11px;
+        line-height: 14px;
+      }
+    }
+
+    @media (max-width: $desktop-1120) {
+      margin-bottom: 0;
+    }
+  }
+
+  .card__controls {
+    flex-direction: row;
+    top: 20px;
+    right: 13px;
+
+    @media (max-width: $phone) {
+      flex-direction: column;
+      top: 130px;
+    }
+
+    @media (max-width: $phone-420) {
+      top: 90px;
+      right: 0;
+    }
+  }
+
+  .card__like {
+    margin-right: 10px;
+  }
+
+  @media (max-width: $desktop-min) {
+    width: calc(50% - 10px);
+    flex-basis: calc(50% - 10px);
+  }
+
+  @media (max-width: $desktop-1120) {
+    flex-direction: column;
+  }
+
+  @media (max-width: $tablet-600) {
+    margin-right: 10px;
+  }
+
+  @media (max-width: $phone) {
+    border: none;
+    padding: 0 10px 15px 0;
+    width: 50%;
+    margin: 0 0 15px 0;
+  }
+}
+
+.card__image-wrapper {
+  position: relative;
+  min-height: 210px;
+
+  @media (max-width: $phone) {
+    min-height: 200px;
+  }
+
+  @media (max-width: $phone-420) {
+    min-height: auto;
+  }
+}
+
+.card__purchase {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+
+  @media (max-width: $desktop-1120) {
+    flex-wrap: wrap;
+  }
+
+  @media (max-width: $phone) {
+    flex-direction: column;
+  }
+}
+
+.card__controls {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  right: 32px;
+  top: 142px;
+  z-index: 1;
+
+  button {
+    background-color: transparent;
+    border: none;
+    width: 24px;
+    height: 24px;
+    padding: 0;
+    transition: 0.2s;
+
+    &:hover {
+      fill: $white;
+      background-color: $black;
+    }
+
+    img {
+      width: 24px;
+      height: 24px;
+    }
+  }
+
+  .card__like {
+    margin-bottom: 10px;
+  }
+
+  @media (max-width: $phone) {
+    top: 130px;
+  }
+
+  @media (max-width: $phone-420) {
+    top: 83px;
+    right: 0;
+  }
+}
+
+.card__description {
+  min-height: 90px;
+  margin-bottom: 10px;
+
+  h2 {
+    font-size: 13px;
+    margin: 2px 0 4px 0;
+    letter-spacing: 0;
+  }
+
+  a {
+    font-size: 13px;
+    line-height: 17px;
+    letter-spacing: 0;
+    margin: 0;
+    text-decoration: none;
+    color: $black;
+    display: inline-block;
+    vertical-align: top;
+    transition: 0.2s;
+
+    &:hover {
+      color: $orange;
+    }
+
+    @media (max-width: $phone) {
+      text-transform: uppercase;
+      min-height: 90px;
+    }
+
+    @media (max-width: $phone) {
+      font-size: 11px;
+      line-height: 14px;
+    }
+  }
+}
+
+.card__old-price {
+  line-height: 100%;
+  display: flex;
+  margin: 0;
+  letter-spacing: 0;
+
+  .card__non-actual {
+    font-size: 13px;
+    color: $gray;
+    text-decoration: line-through;
+  }
+
+  .card__discount {
+    font-size: 11px;
+    margin-left: 7px;
+    max-height: 13px;
+    line-height: 13px;
+    text-decoration: none;
+    color: $orange;
+    border: 1px solid $orange;
+    border-radius: 2px;
+    padding: 0 5px 1px 3px;
+    margin-top: -1px;
+  }
+}
+
+.card__new-price {
+  margin: 0;
+  font-weight: 700;
+  font-size: 20px;
+  letter-spacing: 0;
+}
+
+.card__thumbs {
+  margin-top: 10px;
+  margin-right: 15px;
+
+  @media (max-width: $tablet-720) {
+    display: none;
+  }
+}
+
+.card__thumb {
+  border: 1px solid $thumb-border;
+  width: 50px;
+  height: 50px;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: 0.2s ;
+
+  img {
+    width: 45px;
+    height: 45px;
+  }
+
+  &--active {
+    border-color: $orange;
+  }
+}
+
+.card__image-preview {
+  transition: 0.2s;
+  display: block;
+
+  img {
+    min-width: 195px;
+    height: 195px;
+  }
+
+  &:hover {
+    opacity: 0.7;
+  }
+
+  @media (max-width: $phone-420) {
+    img {
+      min-width: 147px;
+      height: auto;
+    }
+  }
+}

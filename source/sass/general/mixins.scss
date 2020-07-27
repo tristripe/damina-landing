@@ -1,0 +1,61 @@
+@mixin adaptive($point) {
+  @if $point == desktop-1220 {
+    @media only screen and (max-width: $desktop-1220) {
+      @content;
+    }
+  }
+
+  @if $point == desktop-1120 {
+    @media only screen and (max-width: $desktop-1120) {
+      @content;
+    }
+  }
+
+  @if $point == desktop-1024 {
+    @media only screen and (max-width: $desktop-1024) {
+      @content;
+    }
+  }
+
+  @if $point == tablet-900 {
+    @media only screen and (max-width: $tablet-900) {
+      @content;
+    }
+  }
+
+  @if $point == tablet {
+    @media only screen and (max-width: $tablet) {
+      @content;
+    }
+  }
+
+  @if $point == tablet-768 {
+    @media only screen and (max-width: $tablet-768) {
+      @content;
+    }
+  }
+
+  @if $point == tablet-600 {
+    @media only screen and (max-width: $tablet-600) {
+      @content;
+    }
+  }
+
+  @if $point == phone {
+    @media only screen and (max-width: $phone) {
+      @content;
+    }
+  }
+
+  @if $point == phone-360 {
+    @media only screen and (max-width: $phone-360) {
+      @content;
+    }
+  }
+}
+
+@mixin list-reset {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}

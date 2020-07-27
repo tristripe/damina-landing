@@ -1,0 +1,351 @@
+.lead {
+  background-color: $blackest;
+  background-image: url("../img/background/bg-black.jpg");
+  background-size: cover;
+  background-repeat: repeat;
+}
+
+.lead__wrapper {
+  display: flex;
+  justify-content: center;
+
+  @media (max-width: $tablet-720) {
+    flex-direction: column;
+  }
+}
+
+.lead__text {
+  position: relative;
+  display: flex;
+  flex-basis: 50%;
+  flex-direction: column;
+  justify-content: center;
+
+  &--big {
+    padding-top: 50px;
+    padding-bottom: 36px;
+  }
+
+  &::after {
+    position: absolute;
+    content: "";
+    display: block;
+    width: 30px;
+    height: 100%;
+    background-image: url("../img/background/orange-stripes.jpg");
+    background-position: center top;
+    top: 0;
+    right: -12px;
+
+    @media (max-width: $tablet-720) {
+      background-image: url("../img/background/orange-stripes-horizontal.jpg");
+      width: 100%;
+      height: 15px;
+      bottom: 0;
+      top: auto;
+      right: 0;
+    }
+  }
+
+  h3 {
+    font-size: 32px;
+    display: flex;
+    flex-direction: column;
+    letter-spacing: 0;
+    line-height: 100%;
+    margin: 0 0 25px 0;
+
+    @media (max-width: $tablet) {
+      padding-right: 30px;
+    }
+
+    @media (max-width: $phone) {
+      font-size: 24px;
+      line-height: 24px;
+      margin-bottom: 17px;
+    }
+  }
+
+  @media (max-width: $tablet-720) {
+    padding: 30px 0;
+  }
+
+  @media (max-width: $phone-420) {
+    padding: 30px 0 42px 0;
+  }
+}
+
+.lead__image-wrapper {
+  flex-basis: 50%;
+  display: flex;
+
+  img {
+    height: auto;
+  }
+}
+
+.lead__title {
+  line-height: 100%;
+}
+
+.lead__special {
+
+  &--color-orange-big {
+    font-size: 67px;
+    color: $orange;
+    flex-basis: 100%;
+    letter-spacing: -0.02em;
+    margin-bottom: 33px;
+    margin-left: 20px;
+
+    @media (max-width: $desktop-1220) {
+      font-size: 54px;
+    }
+
+    @media (max-width: $desktop-1120) {
+      font-size: 36px;
+      margin-bottom: 15px;
+    }
+
+    @media (max-width: $tablet) {
+      margin-left: 0;
+    }
+
+    @media (max-width: $phone) {
+      font-size: 30px;
+      margin-bottom: 9px;
+    }
+  }
+
+  &--bg-white {
+    font-size: 54px;
+    background-color: $white;
+    color: $black;
+    flex-basis: 100%;
+    padding-top: 30px;
+    padding-bottom: 25px;
+    padding-left: 30px;
+    letter-spacing: 0em;
+    margin-bottom: 33px;
+
+    @media (max-width: $desktop-1220) {
+      font-size: 40px;
+    }
+
+    @media (max-width: $tablet) {
+      font-size: 36px;
+      padding-top: 20px;
+      padding-bottom: 15px;
+      margin-bottom: 15px;
+    }
+
+    @media (max-width: $tablet-900) {
+      padding-left: 10px;
+      font-size: 30px;
+    }
+
+    @media (max-width: $tablet-720) {
+      padding: 10px 0;
+    }
+
+    @media (max-width: $phone-420) {
+      padding: 5px 0;
+      font-size: 24px;
+    }
+  }
+
+  &--color-white {
+    font-size: 48px;
+    color: $white;
+    font-weight: 300;
+    margin-left: 30px;
+    letter-spacing: 0em;
+
+    @media (max-width: $desktop-1220) {
+      font-size: 36px;
+    }
+
+    @media (max-width: $tablet) {
+      font-size: 26px;
+      margin-left: 0;
+    }
+
+    @media (max-width: $phone-420) {
+      font-size: 24px;
+    }
+  }
+
+  &--color-orange {
+    font-size: 48px;
+    color: $orange;
+    font-weight: 300;
+    margin-left: 13px;
+
+    @media (max-width: $desktop-1220) {
+      font-size: 36px;
+    }
+
+    @media (max-width: $tablet) {
+      font-size: 26px;
+    }
+
+    @media (max-width: $phone-420) {
+      font-size: 24px;
+    }
+  }
+
+  &--title-orange {
+    color: $orange;
+  }
+
+  &--title-white {
+    color: $white;
+  }
+}
+
+.lead__title {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 153px 0 0 125px;
+
+  @media (max-width: $desktop-min) {
+    margin-left: 60px;
+  }
+
+  @media (max-width: $desktop-1280) {
+    margin-left: 25px;
+    margin-top: 100px;
+  }
+
+  @media (max-width: $desktop-1120) {
+    margin-top: 60px;
+  }
+
+  @media (max-width: $tablet) {
+    margin-left: 15px;
+  }
+
+  @media (max-width: $tablet-720) {
+    align-items: center;
+    margin: 50px 140px;
+    text-align: center;
+    justify-content: center;
+  }
+
+  @media (max-width: $tablet-600) {
+    margin: 50px;
+  }
+
+  @media (max-width: $tablet-600) {
+    margin: 30px 50px;
+  }
+
+  @media (max-width: $phone-420) {
+    margin: 23px 30px 45px 30px;
+  }
+}
+
+.lead__title-wrapper {
+  position: relative;
+  flex-basis: 50%;
+
+  &::after {
+    position: absolute;
+    content: "";
+    display: block;
+    width: 30px;
+    height: 100%;
+    background-image: url("../img/background/orange-stripes.jpg");
+    background-position: center top;
+    top: 0;
+    right: -12px;
+
+    @media (max-width: $tablet-720) {
+      background-image: url("../img/background/orange-stripes-horizontal.jpg");
+      width: 100%;
+      height: 15px;
+      bottom: 0;
+      top: auto;
+      right: 0;
+    }
+  }
+}
+
+.lead__text-wrapper {
+  margin-top: 10px;
+  margin-left: 155px;
+
+  @media (max-width: $desktop-min) {
+    margin-left: 60px;
+  }
+
+  @media (max-width: $desktop-1280) {
+    margin-left: 35px;
+  }
+
+  @media (max-width: $tablet-900) {
+    margin-left: 15px;
+  }
+}
+
+.lead__discount {
+  background-color: $orange;
+  color: $white;
+  font-weight: 700;
+  width: 65px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 22px;
+  font-weight: 700;
+  margin: 0 0 24px 0;
+  padding-top: 2px;
+  border-radius: 3px;
+  line-height: 100%;
+
+  @media (max-width: $phone-420) {
+    height: 20px;
+    width: 60px;
+    margin-bottom: 10px;
+  }
+}
+
+.lead__advantages {
+  @include list-reset;
+  color: $white;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: 0;
+  width: 460px;
+
+  li {
+    margin-bottom: 9px;
+  }
+
+  @media (max-width: $desktop-1024) {
+    width: auto;
+    padding-right: 30px;
+  }
+}
+
+.lead__benefits {
+  flex-basis: 50%;
+}
+
+.lead__subtitle {
+  font-size: 24px;
+  color: $white;
+  letter-spacing: 0;
+  line-height: 30px;
+  font-weight: 700;
+  padding-right: 40px;
+
+  @media (max-width: $desktop-1024) {
+    font-size: 18px;
+    line-height: 23px;
+  }
+
+  @media (max-width: $phone-420) {
+    padding-right: 0;
+  }
+}

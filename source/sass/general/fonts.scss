@@ -1,0 +1,23 @@
+@font-face {
+  font-display: swap;
+  font-family: "Theinhardt Pan";
+  font-style: normal;
+  font-weight: 300;
+  src: local("TheinhardtPan Light"), local("TheinhardtPan-Light"), url("../fonts/TheinhardtPan-Light.woff2") format("woff2");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Theinhardt Pan";
+  font-style: normal;
+  font-weight: 500;
+  src: local("TheinhardtPan Regular"), local("TheinhardtPan-Regular"), url("../fonts/TheinhardtPan-Regular.woff2") format("woff2");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Theinhardt Pan";
+  font-style: normal;
+  font-weight: 700;
+  src: local("TheinhardtPan Bold"), local("TheinhardtPan-Bold"), url("../fonts/TheinhardtPan-Bold.woff2") format("woff2");
+}

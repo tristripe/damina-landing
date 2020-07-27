@@ -1,0 +1,26 @@
+.product-list {
+  @include list-reset;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  max-width: 1440px;
+  -ms-flex-wrap: wrap !important;
+
+  @media (max-width: $desktop-1024) {
+    width: 700px;
+    margin: 0 auto;
+  }
+
+  @media (max-width: $tablet-768) {
+    width: auto;
+    margin: 0 auto;
+  }
+
+}
+
+.product-list.product-list--extended {
+  &::after {
+    display: none;
+  }
+}

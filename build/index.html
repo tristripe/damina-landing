@@ -1,13 +1,684 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Стартовый шаблон</title>
-  <link rel="stylesheet" href="css/style.css">
+  <title>Тестовый лендинг Damixa</title>
+  <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
-  <h1>Добро пожаловать в Лигу А.</h1>
+
+<header></header>
+<div class="visually-hidden">
+  <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><symbol id="icon-compare" viewBox="0 0 24 24">
+
+        <path d="M10.125 6H9v12h1.125V6zM7.125 13.5H6V18h1.125v-4.5zM12 10.5h1.125V18H12v-7.5zM16.125 12.75H15V18h1.125v-5.25zM16.113 6h-1.125v4.5h1.125V6z"></path><path d="M17.8 8.813V7.687h-4.5v1.125h4.5z"></path>
+</symbol><symbol id="icon-favourites" viewBox="0 0 24 22">
+        <path d="M22.249 2.481A6.081 6.081 0 0 0 17.625.4c-2.529 0-4.13 1.51-5.028 2.777a9.212 9.212 0 0 0-.597.969 9.212 9.212 0 0 0-.597-.97C10.505 1.91 8.903.4 6.375.4c-1.798 0-3.44.74-4.624 2.082C.621 3.763 0 5.48 0 7.313c0 1.997.78 3.855 2.454 5.846 1.496 1.779 3.648 3.613 6.14 5.737.93.791 1.89 1.61 2.912 2.505l.03.026a.701.701 0 0 0 .927 0l.03-.026c1.023-.895 1.984-1.713 2.913-2.505 2.492-2.124 4.644-3.958 6.14-5.737C23.22 11.168 24 9.31 24 7.313c0-1.834-.622-3.55-1.751-4.832zm-7.756 15.345c-.8.682-1.624 1.384-2.493 2.14a326.52 326.52 0 0 0-2.494-2.14c-4.877-4.157-8.1-6.903-8.1-10.513 0-1.492.497-2.878 1.4-3.902a4.694 4.694 0 0 1 3.569-1.606c1.928 0 3.174 1.188 3.88 2.184a8.335 8.335 0 0 1 1.076 2.14.703.703 0 0 0 1.338 0 8.336 8.336 0 0 1 1.076-2.14c.706-.996 1.952-2.184 3.88-2.184 1.389 0 2.656.57 3.569 1.606.903 1.024 1.4 2.41 1.4 3.902 0 3.61-3.223 6.356-8.1 10.513z"></path>
+      </symbol></svg>
+</div>
+<main>
+  <section class="lead">
+    <div class="lead__wrapper container">
+      <div class="lead__title-wrapper">
+        <h2 class="lead__title">
+          <span class="lead__special lead__special--color-orange-big">damixa</span>
+          <span class="lead__special lead__special--bg-white">открывает границы</span>
+          <span class="lead__special lead__special--color-white">со скидкой</span>
+          <span class="lead__special lead__special--color-orange">30%</span>
+        </h2>
+      </div>
+      <div class="lead__image-wrapper">
+        <img src="img/lead/crane-lead-1@1x.jpg" alt="Кран Damixa" title="Кран Damixa" width="720" height="480">
+      </div>
+    </div>
+  </section>
+  <section class="content">
+    <div class="content__centered container">
+      <h2>Откройте Данию с Damixa</h2>
+      <p>Успейте сделать удивительно выгодный ремонт с безграничными скидками
+        на смесители и душевое оборудование от всемирно известного датского бренда
+      </p>
+      <ul class="content__links">
+        <li>
+          <a href="#">Для ванной комнаты</a>
+        </li>
+        <li>
+          <a href="#">Для кухни</a>
+        </li>
+        <li>
+          <a href="#">Душевое оборудование</a>
+        </li>
+      </ul>
+    </div>
+  </section>
+  <section class="lead">
+    <div class="lead__wrapper container">
+      <div class="lead__text">
+        <div class="lead__text-wrapper">
+          <h3>
+            <span class="lead__special lead__special--title-orange">Датское качество</span>
+            <span class="lead__special lead__special--title-white">по российской цене</span>
+          </h3>
+          <p class="lead__subtitle">Всемирно известные смесители для умывальника со скидкой до <span class="lead__discount">-30%</span></p>
+          <ul class="lead__advantages">
+            <li>Максимальная функциональность в самом стильном исполнении</li>
+            <li>Уникальная комбинация востребованных цветовых решений и материалов высочайшего качества</li>
+            <li>Самые передовые разработки в отрасли</li>
+          </ul>
+        </div>
+      </div>
+      <div class="lead__image-wrapper">
+        <img src="img/lead/crane-lead-2@1x.jpg" alt="Кран Damixa" title="Кран Damixa" width="720" height="360">
+      </div>
+    </div>
+  </section>
+  <section class="content">
+    <div class="content__wrapper container">
+      <div class="content__product-list">
+        <ul class="product-list">
+          <li class="card">
+            <div class="card__controls">
+              <button class="card__like" type="button">
+                <svg width="16" height="24">
+                  <use xlink:href="#icon-favourites"></use>
+                </svg>
+              </button>
+              <button class="card__compare" type="button">
+                <svg width="24" height="24">
+                  <use xlink:href="#icon-compare"></use>
+                </svg>
+              </button>
+            </div>
+            <div class="card__image-wrapper">
+              <a href="#" class="card__image-preview">
+                <img src="img/items/palace-bit@1x.jpg" srcset="img/items/palace-bit@1x.jpg 1x img/items/palace-bit@2x.jpg 2x" alt="Смеситель для раковины" title="Смеситель для раковины" width="202" height="202">
+              </a>
+            </div>
+            <div class="card__data">
+              <div class="card__description">
+                <h2>Palace Bit</h2>
+                <a href="#">Смеситель для раковины без донного клапана</a>
+              </div>
+              <div class="card__purchase">
+                <div class="card__price">
+                  <p class="card__old-price">
+                    <span class="card__non-actual">3 390 ₽</span>
+                    <span class="card__discount">-700</span></p>
+                  <p class="card__new-price">2 690 ₽</p>
+                </div>
+                <button class="btn btn__card">
+                  Купить
+                </button>
+              </div>
+            </div>
+          </li>
+          <li class="card">
+            <div class="card__controls">
+              <button class="card__like" type="button">
+                <svg width="16" height="24">
+                  <use xlink:href="#icon-favourites"></use>
+                </svg>
+              </button>
+              <button class="card__compare" type="button">
+                <svg width="24" height="24">
+                  <use xlink:href="#icon-compare"></use>
+                </svg>
+              </button>
+            </div>
+            <div class="card__image-wrapper">
+              <a href="#" class="card__image-preview">
+                <img src="img/items/palace-bit-2@1x.jpg" srcset="img/items/palace-bit-2@1x.jpg 1x img/items/palace-bit-2@2x.jpg 2x" alt="Смеситель для ванны и душа" title="Смеситель для ванны и душа" width="202" height="202">
+              </a>
+            </div>
+            <div class="card__data">
+              <div class="card__description">
+                <h2>Palace Bit</h2>
+                <a href="#">Смеситель для ванны и душа</a>
+              </div>
+              <div class="card__purchase">
+                <div class="card__price">
+                  <p class="card__old-price">
+                    <span class="card__non-actual">3 390 ₽</span>
+                    <span class="card__discount">-700</span></p>
+                  <p class="card__new-price">2 690 ₽</p>
+                </div>
+                <button class="btn btn__card">
+                  Купить
+                </button>
+              </div>
+            </div>
+          </li>
+          <li class="card">
+            <div class="card__controls">
+              <button class="card__like" type="button">
+                <svg width="16" height="24">
+                  <use xlink:href="#icon-favourites"></use>
+                </svg>
+              </button>
+              <button class="card__compare" type="button">
+                <svg width="24" height="24">
+                  <use xlink:href="#icon-compare"></use>
+                </svg>
+              </button>
+            </div>
+            <div class="card__image-wrapper">
+              <a href="#" class="card__image-preview">
+                <img src="img/items/palace-bit-3@1x.jpg" srcset="img/items/palace-bit-3@1x.jpg 1x img/items/palace-bit-3@2x.jpg 2x" alt="Смеситель для душа" title="Смеситель для душа" width="202" height="202">
+              </a>
+            </div>
+            <div class="card__data">
+              <div class="card__description">
+                <h2>Palace Bit</h2>
+                <a href="#">Смеситель для душа<p></p>
+              </a></div>
+              <div class="card__purchase">
+                <div class="card__price">
+                  <p class="card__old-price">
+                    <span class="card__non-actual">3 390 ₽</span>
+                    <span class="card__discount">-700</span></p>
+                  <p class="card__new-price">2 690 ₽</p>
+                </div>
+                <button class="btn btn__card">
+                  Купить
+                </button>
+              </div>
+            </div>
+          </li>
+          <li class="card">
+            <div class="card__controls">
+              <button class="card__like" type="button">
+                <svg width="16" height="24">
+                  <use xlink:href="#icon-favourites"></use>
+                </svg>
+              </button>
+              <button class="card__compare" type="button">
+                <svg width="24" height="24">
+                  <use xlink:href="#icon-compare"></use>
+                </svg>
+              </button>
+            </div>
+            <div class="card__image-wrapper">
+              <a href="#" class="card__image-preview">
+                <img src="img/items/palace-bit-4@1x.jpg" srcset="img/items/palace-bit-4@1x.jpg 1x img/items/palace-bit-4@2x.jpg 2x" alt="Смеситель для душа" title="Смеситель для душа" width="202" height="202">
+              </a>
+            </div>
+            <div class="card__data">
+              <div class="card__description">
+                <h2>Palace Bit</h2>
+                <a href="#">Смеситель для ванны и душа, с длинным изливом<p></p>
+              </a></div>
+              <div class="card__purchase">
+                <div class="card__price">
+                  <p class="card__old-price">
+                    <span class="card__non-actual">4 450 ₽</span>
+                    <span class="card__discount">-660</span></p>
+                  <p class="card__new-price">3 990 ₽</p>
+                </div>
+                <button class="btn btn__card">
+                  Купить
+                </button>
+              </div>
+            </div>
+          </li>
+          <li class="card">
+            <div class="card__controls">
+              <button class="card__like" type="button">
+                <svg width="16" height="24">
+                  <use xlink:href="#icon-favourites"></use>
+                </svg>
+              </button>
+              <button class="card__compare" type="button">
+                <svg width="24" height="24">
+                  <use xlink:href="#icon-compare"></use>
+                </svg>
+              </button>
+            </div>
+            <div class="card__image-wrapper">
+              <a href="#" class="card__image-preview">
+                <img src="img/items/origin-evo-2-1@1x.jpg" srcset="img/items/origin-evo-2-1@1x.jpg 1x img/items/origin-evo-2-1@2x.jpg 2x" alt="Смеситель для раковины" title="Смеситель для раковины" width="202" height="202">
+              </a>
+            </div>
+            <div class="card__data">
+              <div class="card__description">
+                <h2>Origin Evo 2</h2>
+                <a href="#">Смеситель для раковины, без донного клапана<p></p>
+              </a></div>
+              <div class="card__purchase">
+                <div class="card__price">
+                  <p class="card__old-price">
+                    <span class="card__non-actual">5 890 ₽</span>
+                    <span class="card__discount">-660</span></p>
+                  <p class="card__new-price">5 290 ₽</p>
+                </div>
+                <button class="btn btn__card">
+                  Купить
+                </button>
+              </div>
+            </div>
+          </li>
+          <li class="card">
+            <div class="card__controls">
+              <button class="card__like" type="button">
+                <svg width="16" height="24">
+                  <use xlink:href="#icon-favourites"></use>
+                </svg>
+              </button>
+              <button class="card__compare" type="button">
+                <svg width="24" height="24">
+                  <use xlink:href="#icon-compare"></use>
+                </svg>
+              </button>
+            </div>
+            <div class="card__image-wrapper">
+              <a href="#" class="card__image-preview">
+                <img src="img/items/origin-evo-2-2@1x.jpg" srcset="img/items/origin-evo-2-2@1x.jpg 1x img/items/origin-evo-2-2@2x.jpg 2x" alt="Смеситель для ванны и душа" title="Смеситель для ванны и душа" width="202" height="202">
+              </a>
+            </div>
+            <div class="card__data">
+              <div class="card__description">
+                <h2>Origin Evo 2</h2>
+                <a href="#">Смеситель для ванны и душа<p></p>
+              </a></div>
+              <div class="card__purchase">
+                <div class="card__price">
+                  <p class="card__old-price">
+                    <span class="card__non-actual">5 890 ₽</span>
+                    <span class="card__discount">-660</span></p>
+                  <p class="card__new-price">5 290 ₽</p>
+                </div>
+                <button class="btn btn__card">
+                  Купить
+                </button>
+              </div>
+            </div>
+          </li>
+          <li class="card">
+            <div class="card__controls">
+              <button class="card__like" type="button">
+                <svg width="16" height="24">
+                  <use xlink:href="#icon-favourites"></use>
+                </svg>
+              </button>
+              <button class="card__compare" type="button">
+                <svg width="24" height="24">
+                  <use xlink:href="#icon-compare"></use>
+                </svg>
+              </button>
+            </div>
+            <div class="card__image-wrapper">
+              <a href="#" class="card__image-preview">
+                <img src="img/items/origin-evo-2-3@1x.jpg" srcset="img/items/origin-evo-2-3@1x.jpg 1x img/items/origin-evo-2-3@2x.jpg 2x" alt="Смеситель для душа" title="Смеситель для душа" width="202" height="202">
+              </a>
+            </div>
+            <div class="card__data">
+              <div class="card__description">
+                <h2>Origin Evo 2</h2>
+                <a href="#">Смеситель для душа<p></p>
+              </a></div>
+              <div class="card__purchase">
+                <div class="card__price">
+                  <p class="card__old-price">
+                    <span class="card__non-actual">5 890 ₽</span>
+                    <span class="card__discount">-660</span></p>
+                  <p class="card__new-price">5 290 ₽</p>
+                </div>
+                <button class="btn btn__card">
+                  Купить
+                </button>
+              </div>
+            </div>
+          </li>
+          <li class="card">
+            <div class="card__controls">
+              <button class="card__like" type="button">
+                <svg width="16" height="24">
+                  <use xlink:href="#icon-favourites"></use>
+                </svg>
+              </button>
+              <button class="card__compare" type="button">
+                <svg width="24" height="24">
+                  <use xlink:href="#icon-compare"></use>
+                </svg>
+              </button>
+            </div>
+            <div class="card__image-wrapper">
+              <a href="#" class="card__image-preview">
+                <img src="img/items/origin-elegance@1x.jpg" srcset="img/items/origin-elegance@1x.jpg 1x img/items/origin-elegance@1x.jpg 2x" alt="Смеситель для раковины" title="Смеситель для раковины" width="202" height="202">
+              </a>
+            </div>
+            <div class="card__data">
+              <div class="card__description">
+                <h2>Origin Elegance</h2>
+                <a href="#">Смеситель для раковины, без донного клапана, белый<p></p>
+              </a></div>
+              <div class="card__purchase">
+                <div class="card__price">
+                  <p class="card__old-price">
+                    <span class="card__non-actual">5 890 ₽</span>
+                    <span class="card__discount">-660</span></p>
+                  <p class="card__new-price">5 290 ₽</p>
+                </div>
+                <button class="btn btn__card">
+                  Купить
+                </button>
+              </div>
+            </div>
+          </li>
+          <li class="card">
+            <div class="card__controls">
+              <button class="card__like" type="button">
+                <svg width="16" height="24">
+                  <use xlink:href="#icon-favourites"></use>
+                </svg>
+              </button>
+              <button class="card__compare" type="button">
+                <svg width="24" height="24">
+                  <use xlink:href="#icon-compare"></use>
+                </svg>
+              </button>
+            </div>
+            <div class="card__image-wrapper">
+              <a href="#" class="card__image-preview">
+                <img src="img/items/origin-elegance-2@1x.jpg" srcset="img/items/origin-elegance-2@1x.jpg 1x img/items/origin-elegance-2@1x.jpg 2x" alt="Смеситель для ванны и душа" title="Смеситель для ванны и душа" width="202" height="202">
+              </a>
+            </div>
+            <div class="card__data">
+              <div class="card__description">
+                <h2>Origin Elegance</h2>
+                <a href="#">Смеситель для ванны и душа, белый<p></p>
+              </a></div>
+              <div class="card__purchase">
+                <div class="card__price">
+                  <p class="card__old-price">
+                    <span class="card__non-actual">5 890 ₽</span>
+                    <span class="card__discount">-660</span></p>
+                  <p class="card__new-price">5 290 ₽</p>
+                </div>
+                <button class="btn btn__card">
+                  Купить
+                </button>
+              </div>
+            </div>
+          </li>
+        </ul>
+        <div class="content__button-wrapper">
+          <button type="button" class="btn btn__more">Показать еще</button>
+        </div>
+      </div>
+
+    </div>
+  </section>
+  <section class="lead">
+    <div class="lead__wrapper container">
+      <div class="lead__text">
+        <div class="lead__text-wrapper">
+          <h3>
+            <span class="lead__special lead__special--title-orange">Датская функциональность</span>
+            <span class="lead__special lead__special--title-white">ванной комнаты</span>
+          </h3>
+          <p class="lead__subtitle">Всемирно известные смесители для умывальника со скидкой до <span class="lead__discount">-30%</span></p>
+          <ul class="lead__advantages">
+            <li>Лучшие разработки датских инженеров Damixa</li>
+            <li>До 3 режимов душевых леек — на ваш выбор</li>
+            <li>Дизайн легко впишется в ванную любого стиля</li>
+          </ul>
+        </div>
+      </div>
+      <div class="lead__image-wrapper">
+        <img src="img/lead/crane-lead-3@1x.jpg" alt="Ванная комната" title="Ванная комната" width="720" height="360">
+      </div>
+    </div>
+  </section>
+  <section class="content">
+    <div class="content__wrapper container">
+      <div class="content__product-list">
+        <ul class="product-list">
+          <li class="card">
+            <div class="card__controls">
+              <button class="card__like" type="button">
+                <svg width="16" height="24">
+                  <use xlink:href="#icon-favourites"></use>
+                </svg>
+              </button>
+              <button class="card__compare" type="button">
+                <svg width="24" height="24">
+                  <use xlink:href="#icon-compare"></use>
+                </svg>
+              </button>
+            </div>
+            <div class="card__image-wrapper">
+              <a href="#" class="card__image-preview">
+                <img src="img/items/palace-evo@1x.jpg" srcset="img/items/palace-evo@1x.jpg 1x img/items/palace-evo@1x.jpg 2x" alt="Душевая система" title="Душевая система" width="202" height="202">
+              </a>
+            </div>
+            <div class="card__data">
+              <div class="card__description">
+                <h2>Palace Evo</h2>
+                <a href="#">Душевая система<p></p>
+              </a></div>
+              <div class="card__purchase">
+                <div class="card__price">
+                  <p class="card__old-price">
+                    <span class="card__non-actual">3 390 ₽</span>
+                    <span class="card__discount">-700</span></p>
+                  <p class="card__new-price">2 690 ₽</p>
+                </div>
+                <button class="btn btn__card">
+                  Купить
+                </button>
+              </div>
+            </div>
+          </li>
+          <li class="card">
+            <div class="card__controls">
+              <button class="card__like" type="button">
+                <svg width="16" height="24">
+                  <use xlink:href="#icon-favourites"></use>
+                </svg>
+              </button>
+              <button class="card__compare" type="button">
+                <svg width="24" height="24">
+                  <use xlink:href="#icon-compare"></use>
+                </svg>
+              </button>
+            </div>
+            <div class="card__image-wrapper">
+              <a href="#" class="card__image-preview">
+                <img src="img/items/origine-one@1x.jpg" srcset="img/items/origine-one@1x.jpg 1x img/items/origine-one@2x.jpg 2x" alt="Душевая система" title="Душевая система" width="202" height="202">
+              </a>
+            </div>
+            <div class="card__data">
+              <div class="card__description">
+                <h2>Origine One</h2>
+                <a href="#">Душевая система<p></p>
+              </a></div>
+              <div class="card__purchase">
+                <div class="card__price">
+                  <p class="card__old-price">
+                    <span class="card__non-actual">3 390 ₽</span>
+                    <span class="card__discount">-700</span></p>
+                  <p class="card__new-price">2 690 ₽</p>
+                </div>
+                <button class="btn btn__card">
+                  Купить
+                </button>
+              </div>
+            </div>
+          </li>
+          <li class="card">
+            <div class="card__controls">
+              <button class="card__like" type="button">
+                <svg width="16" height="24">
+                  <use xlink:href="#icon-favourites"></use>
+                </svg>
+              </button>
+              <button class="card__compare" type="button">
+                <svg width="24" height="24">
+                  <use xlink:href="#icon-compare"></use>
+                </svg>
+              </button>
+            </div>
+            <div class="card__image-wrapper">
+              <a href="#" class="card__image-preview">
+                <img src="img/items/origine-one-2@1x.jpg" srcset="img/items/origine-one-2@1x.jpg 1x img/items/origine-one-2@2x.jpg 2x" alt="Душевой комплект" title="Душевой комплект" width="202" height="202">
+              </a>
+            </div>
+            <div class="card__data">
+              <div class="card__description">
+                <h2>Origine One</h2>
+                <a href="#">Душевой комплект<p></p>
+              </a></div>
+              <div class="card__purchase">
+                <div class="card__price">
+                  <p class="card__old-price">
+                    <span class="card__non-actual">3 790 ₽</span>
+                    <span class="card__discount">-400</span></p>
+                  <p class="card__new-price">3 390 ₽</p>
+                </div>
+                <button class="btn btn__card">
+                  Купить
+                </button>
+              </div>
+            </div>
+          </li>
+        </ul>
+        <div class="content__button-wrapper">
+          <button type="button" class="btn btn__more">Показать еще</button>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="lead">
+    <div class="lead__wrapper container">
+      <div class="lead__text lead__text--big">
+        <div class="lead__text-wrapper">
+          <h3>
+            <span class="lead__special lead__special--title-orange">Культовый датский дизайн</span>
+            <span class="lead__special lead__special--title-white">для вашей кухни</span>
+          </h3>
+          <p class="lead__subtitle">Всемирно известные смесители для умывальника со скидкой до <span class="lead__discount">-30%</span></p>
+        </div>
+      </div>
+      <div class="lead__benefits">
+        <ul class="benefits">
+          <li class="benefits__icon benefits__icon--cog">
+            Отличная цена
+          </li>
+          <li class="benefits__icon benefits__icon--arm">
+            Удобство использования
+          </li>
+          <li class="benefits__icon benefits__icon--shield">
+            Гарантия 5 лет
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+  <section class="content">
+    <div class="content__wrapper container">
+      <div class="content__product-list content__product-list--extended">
+        <ul class="product-list product-list--extended">
+          <li class="card card--extended">
+            <div class="card__controls">
+              <button class="card__like" type="button">
+                <svg width="16" height="24">
+                  <use xlink:href="#icon-favourites"></use>
+                </svg>
+              </button>
+              <button class="card__compare" type="button">
+                <svg width="24" height="24">
+                  <use xlink:href="#icon-compare"></use>
+                </svg>
+              </button>
+            </div>
+            <div class="card__image-wrapper">
+              <div class="card__thumbs">
+                <div class="card__thumb card__thumb--active">
+                  <img src="img/items/object@1x.jpg" alt="Capital start v2" width="50" height="50" title="Capital start v2">
+                </div>
+                <div class="card__thumb">
+                  <img src="img/items/capital-start@1x.jpg" alt="Capital start v2" width="50" height="50" title="Capital start v2">
+                </div>
+              </div>
+              <a href="#" class="card__image-preview">
+                <img src="img/items/capital-start@1x.jpg" srcset="img/items/capital-start@1x.jpg 1x img/items/capital-start@2x.jpg 2x" alt="Смеситель для раковины" title="Смеситель для раковины" width="195" height="195">
+              </a>
+            </div>
+            <div class="card__data">
+              <div class="card__description">
+                <h2>Capital Start</h2>
+                <a href="#">Смеситель для кухни с высоким изливом</a>
+              </div>
+              <div class="card__purchase">
+                <div class="card__price">
+                  <p class="card__old-price">
+                    <span class="card__non-actual">16 990 ₽</span>
+                    <span class="card__discount">-2 100</span></p>
+                  <p class="card__new-price">14 990 ₽</p>
+                </div>
+                <button class="btn btn__card">
+                  Купить
+                </button>
+              </div>
+            </div>
+          </li>
+          <li class="card card--extended">
+            <div class="card__controls">
+              <button class="card__like" type="button">
+                <svg width="16" height="24">
+                  <use xlink:href="#icon-favourites"></use>
+                </svg>
+              </button>
+              <button class="card__compare" type="button">
+                <svg width="24" height="24">
+                  <use xlink:href="#icon-compare"></use>
+                </svg>
+              </button>
+            </div>
+            <div class="card__image-wrapper">
+              <div class="card__thumbs">
+                <div class="card__thumb card__thumb--active">
+                  <img src="img/items/object@1x.jpg" alt="Capital start v2" width="50" height="50" title="Capital start v2">
+                </div>
+                <div class="card__thumb">
+                  <img src="img/items/capital-start@1x.jpg" alt="Capital start v2" width="50" height="50" title="Capital start v2">
+                </div>
+              </div>
+              <a href="#" class="card__image-preview">
+                <img src="img/items/object@1x.jpg" srcset="img/items/object@1x.jpg 1x img/items/object@2x.jpg 2x" alt="Смеситель для раковины" title="Смеситель для раковины" width="195" height="195">
+              </a>
+            </div>
+            <div class="card__data">
+              <div class="card__description">
+                <h2>Object</h2>
+                <a href="#">Смеситель для кухни</>
+              </a></div>
+              <div class="card__purchase">
+                <div class="card__price">
+                  <p class="card__old-price">
+                    <span class="card__non-actual">16 990 ₽</span>
+                    <span class="card__discount">-2 100</span></p>
+                  <p class="card__new-price">14 990 ₽</p>
+                </div>
+                <button class="btn btn__card">
+                  Купить
+                </button>
+              </div>
+            </div>
+          </li>
+        </ul>
+        <div class="content__button-wrapper">
+          <button type="button" class="btn btn__more">Показать еще</button>
+        </div>
+      </div>
+    </div>
+
+  </section>
+</main>
+
+<footer></footer>
+
 </body>
 </html>

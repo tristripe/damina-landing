@@ -1,0 +1,165 @@
+.content {
+  background-color: $white;
+}
+
+.content__wrapper {
+  display: flex;
+  padding-top: 30px;
+  padding-left: 155px;
+  padding-right: 115px;
+
+  @media (max-width: $desktop-min) {
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+
+  @media (max-width: $desktop-1280) {
+    padding-left: 35px;
+    padding-right: 35px;
+  }
+
+  @media (max-width: $tablet-900) {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+
+  @media (max-width: $phone-420) {
+    padding-top: 10px;
+  }
+}
+
+.content__centered {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 25px;
+  padding-bottom: 57px;
+
+  @media (max-width: $phone-420) {
+    padding-bottom: 27px;
+  }
+
+  h2 {
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 48px;
+    color: $black;
+    letter-spacing: 0;
+    margin-bottom: 15px;
+
+    @media (max-width: $phone) {
+      text-align: center;
+    }
+
+    @media (max-width: $phone-420) {
+      font-size: 24px;
+      line-height: 24px;
+    }
+  }
+
+  p {
+    text-align: center;
+    width: 850px;
+    color: $black;
+    font-size: 24px;
+    line-height: 36px;
+    margin: 0 0 18px 0;
+    font-weight: 300;
+    letter-spacing: 0;
+
+    @media (max-width: $tablet) {
+      width: auto;
+      font-size: 20px;
+      line-height: 30px;
+    }
+
+    @media (max-width: $phone-420) {
+      font-size: 14px;
+      line-height: 18px;
+    }
+  }
+}
+
+.content__links {
+  @include list-reset;
+  display: flex;
+  justify-content: space-between;
+  width: 490px;
+
+  li a {
+    position: relative;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 14px;
+    line-height: 21px;
+    font-weight: 700;
+    color: $black;
+    letter-spacing: 0;
+    transition: 0.3s;
+
+    &:hover {
+      color: $orange;
+
+      &:before {
+        display: none;
+      }
+    }
+
+    &:before {
+      display: block;
+      position: absolute;
+      content: "";
+      width: 100%;
+      height: 1px;
+      background-color: $black;
+      bottom: 1px;
+
+      @media (max-width: $tablet-600) {
+        left: 0;
+      }
+    }
+
+    @media (max-width: $tablet-600) {
+      margin-right: 10px;
+    }
+
+    @media (max-width: $phone-420) {
+      margin-right: 0;
+      margin-bottom: 9px;
+    }
+  }
+
+  li {
+    @media (max-width: $phone-420) {
+      margin-bottom: 10px;
+    }
+  }
+
+  @media (max-width: $tablet-600) {
+    width: auto;
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+.content__product-list {
+  position: relative;
+
+  &::after {
+    display: block;
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    bottom: 31px;
+    background-color: $border-gray;
+    left: 0;
+  }
+
+  &--extended {
+    &::after {
+      height: 0;
+    }
+  }
+}
+
