@@ -48,6 +48,7 @@
 
   @media (max-width: $phone) {
     width: calc(50%);
+    padding-right: 8px;
 
     &:nth-child(5n) {
       width: calc(50%);
@@ -55,6 +56,7 @@
 
     &:nth-child(2n) {
       padding-right: 0;
+      padding-left: 8px;
     }
   }
 }
@@ -92,7 +94,7 @@
     }
 
     @media (max-width: $phone-420) {
-      min-height: 210px;
+      min-height: 100px;
     }
   }
 
@@ -170,6 +172,10 @@
 .card__image-wrapper {
   position: relative;
   min-height: 210px;
+
+  @media (max-width: $phone) {
+    min-height: 100px;
+  }
 }
 
 .card__purchase {
@@ -342,8 +348,9 @@
 
   @media (max-width: $phone-420) {
     img {
-      min-width: 147px;
+      min-width: 150px;
       height: auto;
+      width: 150px;
     }
   }
 }
